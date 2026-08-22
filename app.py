@@ -526,9 +526,17 @@ with st.sidebar:
         """,
         unsafe_allow_html=True
     )
-
+    st.markdown("""
+    <style>
+    .nav-link,
+    .nav-link span,
+    .nav-link p {
+        color: #ffffff !important;
+    }
+</style>
+""", unsafe_allow_html=True)
     menu = option_menu(
-    "SMART HOME",
+    "Main Menu",
 
     [
         "Dashboard",

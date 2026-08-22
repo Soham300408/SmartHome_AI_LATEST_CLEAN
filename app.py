@@ -567,6 +567,11 @@ with st.sidebar:
     default_index=0,
 
     styles={
+         "menu-title": {
+            "color": "#ffffff",
+            "font-size": "18px",
+            "font-weight": "700",
+        },   
         "container": {
             "padding": "10px",
             "background-color": "#102f50",

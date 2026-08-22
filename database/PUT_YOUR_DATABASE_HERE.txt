@@ -1,0 +1,1 @@
+Copy your existing SmartHome.db or smarthome.db into this folder before running the app.

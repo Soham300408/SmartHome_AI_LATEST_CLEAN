@@ -1,0 +1,1 @@
+Optional: copy the contents of your old uploads folder here to preserve uploaded documents.

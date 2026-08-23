@@ -1390,26 +1390,7 @@ elif menu == "Documents":
             )
 
         elif selected_mime == "application/pdf":
-
-            # st.pdf gives a proper PDF viewer in supported Streamlit versions.
-            # Fallback iframe keeps older versions usable.
-            try:
-                st.pdf(selected_bytes)
-            except Exception:
-                encoded = base64.b64encode(selected_bytes).decode()
-
-                st.markdown(
-                    f"""
-                    <iframe
-                        src="data:application/pdf;base64,{encoded}"
-                        width="100%"
-                        height="700"
-                        style="border:1px solid rgba(77,166,255,.3);
-                               border-radius:15px;">
-                    </iframe>
-                    """,
-                    unsafe_allow_html=True
-                )
+            st.info("📄 PDF ready. Click Download Document to open it.")
 
         else:
             st.info(
